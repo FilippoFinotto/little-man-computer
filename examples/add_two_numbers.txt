@@ -1,0 +1,8 @@
+// Programma che legge due numeri e stampa la loro somma
+INP
+STA FIRST
+INP
+ADD FIRST
+OUT
+HLT
+FIRST DAT // Variabile per memorizzare il primo numero
