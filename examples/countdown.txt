@@ -1,0 +1,14 @@
+// Programma che esegue un conto alla rovescia
+// da un numero dato in input.
+
+        INP         // Legge il numero di partenza (es. 5)
+LOOP    STA COUNT   // Salva il numero corrente
+        OUT         // Lo stampa
+        SUB ONE     // Sottrae 1
+        BRP LOOP    // Se il risultato è >= 0, salta di nuovo a LOOP
+
+        HLT
+
+// Variabili usate dal programma
+COUNT   DAT 0       // Cella per memorizzare il contatore
+ONE     DAT 1       // Il valore 1, per la sottrazione

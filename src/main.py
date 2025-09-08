@@ -10,7 +10,7 @@ def main():
         return
 
     assembly_file = sys.argv[1]
-    input_values = [10, 5]  # Valori di input di esempio
+    input_values = [5]  # Valori di input di esempio
 
     try:
         print(f"Assemblando il file: {assembly_file}...")
