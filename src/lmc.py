@@ -53,6 +53,10 @@ class LMC:
             elif opcode == 3:  # STA (Store)
                 self.memory[address] = self.accumulator
 
+            elif opcode == 4:
+                self.halted = True
+                raise LMCExecutionError(f"Istruzione non valida (opcode 4xx): {instruction} all'indirizzo {self.program_counter - 1}")
+
             elif opcode == 5:  # LDA (Load)
                 self.accumulator = self.memory[address]
                 self.negative_flag = False # LDA non è un'operazione aritmetica, resetta il flag
